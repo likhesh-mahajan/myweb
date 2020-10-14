@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'github', url: 'https://github.com/likhesh-mahajan/myweb'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/likhesh-mahajan/myweb'
             }
         }
         stage("Maven Build"){
