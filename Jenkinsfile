@@ -4,7 +4,7 @@ pipeline{
     agent any
     
     environment{
-        PATH = "/opt/maven3/bin:$PATH"
+        PATH = "/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3:$PATH"
     }
     stages{
         stage("Git Checkout"){
